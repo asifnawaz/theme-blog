@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['reporterly.net']
+    domains: ['urdunews.ga']
   }
 }
