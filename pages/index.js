@@ -42,7 +42,7 @@ export async function getStaticProps() {
   let postsContainer = []
   for (const section of sections) {
     const args = `${section.type}=${section.type_id}&per_page=${section.count}&_embed=true`
-    const res = await fetch(`https://reporterly.net/wp-json/wp/v2/posts?${args}`)
+    const res = await fetch(`https://urdunews.ga/wp-json/wp/v2/posts?${args}`)
     const posts = await res.json()
     postsContainer.push({
       ...section,
